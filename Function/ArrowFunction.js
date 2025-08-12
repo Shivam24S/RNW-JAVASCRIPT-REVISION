@@ -20,14 +20,16 @@
 
 // You can’t use new with arrow functions.
 
+greeting();
+
+// function declaration
+
 function greeting() {
   console.log("hello");
 }
 
-greeting();
+// function expression
 
-// using arrow function
+let greeting2 = () => console.log("hello");
 
-const greeting1 = () => console.log("hello");
-
-greeting1();
+greeting2();
